@@ -22,7 +22,7 @@
 | mfhi        | 110          | f $d            | $d = hi                   |
 | mflo        | 111          | f $d            | $d = lo                   |
 | I-Type      |              |                 |                           |
-| lw          | 0001         | o $t, i ($s)    | $t = MEM [$s + i × 2]     |
+| lw          | 0001         | o $t, i ($s)    | $t = MEM [$s + i << 2]     |
 | sw          | 0010         | o $t, i ($s)    | MEM [$s + i × 2] = $t     |
 | beq         | 0011         | o $s, $t, label | if ($s == $t) pc += i × 2 |
 | addi        | 0100         | f $d, $s, i     | $d = $s + SE(i)           |
