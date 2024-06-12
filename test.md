@@ -4,7 +4,7 @@ Notably, the architecture makes use of a special register file with two register
 
 The NITC-RISC19 is relatively simple, but it is general enough to solve complex problems with three machine-code instruction formats (R, I, and J type) and a total of 13 instructions shown below.
 
-### Instruction Formats
+# Instruction Formats
 
 ## R Type Instruction format
 
@@ -24,7 +24,7 @@ The NITC-RISC19 is relatively simple, but it is general enough to solve complex 
 |--------|-----------------|-------------------------------------------------|
 | 4 bit  | 3 bit           |  12 bits signed                                 |
 
-### Instruction Reference
+# Instruction Reference
 
 ## R Type Instruction Format
 
