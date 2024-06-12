@@ -1,15 +1,26 @@
+The Little-Endian Computer Architecture serves as the foundation for the development of the 16-bit NITC-RISC19 computer for teaching. It (NITC-RISC19) is an 8-register, 16-bit computer system. It uses registers R0 to R7 for general purposes, where R7 is $ra. The Architecture makes use of a special register file with two registers hi and lo, with one read port and one write port, operated with 3 control signals spregwrite (activated when the register file is written), readhilo (activated when the register file is read) and spra (activated when the chosen register is hi, and deactivated when the chosen register is lo).
+
+The NITC-RISC19 is relatively simple, but it is general enough to solve complex problems with three machine-code instruction formats (R, I, and J type) and a total of 13 instructions shown below.
+
+### R Type Instruction format
 
 | Opcode | Register S ($s) | Register T ($t) | Register D ($d) | Funct |
 |--------|-----------------|-----------------|-----------------|-------|
 | 4 bit  | 3 bit           | 3 bit           | 3 bit           | 3 bit |
 
+### I Type Instruction Format
+
 | Opcode | Register S ($s) | Register T ($t) | Immediate (imm) |
 |--------|-----------------|-----------------|-----------------|
 | 4 bit  | 3 bit           | 3 bit           |  6 bits signed  |
 
+### J Type Instruction format
+
 | Opcode | Register S ($s) | Immediate (imm) |
 |--------|-----------------|-----------------|
 | 4 bit  | 3 bit           |  12 bits signed |
+
+### Instruction Reference
 
 | Instruction | Opcode/Funct | Syntax          | Operation                   |
 |-------------|--------------|-----------------|-----------------------------|
