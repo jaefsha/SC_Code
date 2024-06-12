@@ -13,7 +13,7 @@ The NITC-RISC19 is relatively simple, but it is general enough to solve complex 
 ### I Type Instruction Format
 
 | Opcode | Register S ($s) | Register T ($t) | Immediate (imm)               |
-|--------|-----------------|-----------------|---------------------          |
+|--------|-----------------|-----------------|-------------------------------|
 | 4 bit  | 3 bit           | 3 bit           |  6 bits signed                |
 
 ### J Type Instruction format
