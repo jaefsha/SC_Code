@@ -41,6 +41,7 @@ The NITC-RISC19 is relatively simple, but it is general enough to solve complex 
 ## I Type Instruction Format
 
 | Instruction | Opcode/Funct | Syntax          | Operation                   |
+|-------------|--------------|-----------------|-----------------------------|
 | lw          | 0001         | o $t, i ($s)    | $t = MEM [$s + i << 2]      |
 | sw          | 0010         | o $t, i ($s)    | MEM [$s + i << 2] = $t      |
 | beq         | 0011         | o $s, $t, label | if ($s == $t) pc += i << 2  |
@@ -48,5 +49,6 @@ The NITC-RISC19 is relatively simple, but it is general enough to solve complex 
 
 ## J Type Instruction Format
 | Instruction | Opcode/Funct | Syntax          | Operation                   |
+|-------------|--------------|-----------------|-----------------------------|
 | j           | 1000         | o label         | pc += i << 2                |
 | jal         | 1001         | o label         | $7 = pc; pc += i << 2       |
